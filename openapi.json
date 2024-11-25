@@ -7,7 +7,7 @@
     },
     "servers": [
       {
-        "url": "https://your-backend-url.com"
+        "url": "https://waelalessa21.github.io/strategic-planning-plugin"
       }
     ],
     "paths": {
@@ -21,20 +21,48 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "project_name": { "type": "string", "description": "Name of the project" },
-                    "description": { "type": "string", "description": "Brief project description" },
-                    "target_audience": { "type": "string", "description": "Who the project is targeting" },
-                    "timeline": { "type": "string", "description": "Project timeline" },
-                    "strengths": { "type": "string", "description": "Strengths of the project" },
-                    "weaknesses": { "type": "string", "description": "Weaknesses of the project" },
+                    "project_name": {
+                      "type": "string",
+                      "description": "Name of the project"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "Brief project description"
+                    },
+                    "target_audience": {
+                      "type": "string",
+                      "description": "Who the project is targeting"
+                    },
+                    "timeline": {
+                      "type": "string",
+                      "description": "Project timeline"
+                    },
+                    "strengths": {
+                      "type": "string",
+                      "description": "Strengths of the project"
+                    },
+                    "weaknesses": {
+                      "type": "string",
+                      "description": "Weaknesses of the project"
+                    },
                     "competitors": {
                       "type": "array",
-                      "items": { "type": "string" },
+                      "items": {
+                        "type": "string"
+                      },
                       "description": "List of competitors"
                     },
-                    "income_source": { "type": "string", "description": "Sources of income for the project" }
+                    "income_source": {
+                      "type": "string",
+                      "description": "Sources of income for the project"
+                    }
                   },
-                  "required": ["project_name", "description", "target_audience", "timeline"]
+                  "required": [
+                    "project_name",
+                    "description",
+                    "target_audience",
+                    "timeline"
+                  ]
                 }
               }
             }
@@ -47,7 +75,10 @@
                   "schema": {
                     "type": "object",
                     "properties": {
-                      "pdf_url": { "type": "string", "description": "URL of the generated PDF file" }
+                      "pdf_url": {
+                        "type": "string",
+                        "description": "URL of the generated PDF file"
+                      }
                     }
                   }
                 }

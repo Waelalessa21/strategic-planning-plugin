@@ -9,11 +9,11 @@
     },
     "api": {
       "type": "openapi",
-      "url": "https://your-domain.com/openapi.json",
+      "url": "https://waelalessa21.github.io/strategic-planning-plugin/openapi.json",
       "has_user_authentication": false
     },
-    "logo_url": "https://your-domain.com/logo.png",
-    "contact_email": "support@your-domain.com",
-    "legal_info_url": "https://your-domain.com/terms"
+    "logo_url": "https://waelalessa21.github.io/strategic-planning-plugin/logo.png",
+    "contact_email": "Waeelalessa5@gmail.com",
+    "legal_info_url": "https://waelalessa21.github.io/strategic-planning-plugin/terms.html"
   }
   
