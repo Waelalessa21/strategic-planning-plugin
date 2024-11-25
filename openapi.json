@@ -1,0 +1,61 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+      "title": "Strategic Planning Assistant API",
+      "version": "1.0.0",
+      "description": "API for generating strategic plans, SWOT diagrams, and competitor analysis."
+    },
+    "servers": [
+      {
+        "url": "https://your-backend-url.com"
+      }
+    ],
+    "paths": {
+      "/generate-plan": {
+        "post": {
+          "summary": "Generate a strategic plan",
+          "operationId": "generatePlan",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "project_name": { "type": "string", "description": "Name of the project" },
+                    "description": { "type": "string", "description": "Brief project description" },
+                    "target_audience": { "type": "string", "description": "Who the project is targeting" },
+                    "timeline": { "type": "string", "description": "Project timeline" },
+                    "strengths": { "type": "string", "description": "Strengths of the project" },
+                    "weaknesses": { "type": "string", "description": "Weaknesses of the project" },
+                    "competitors": {
+                      "type": "array",
+                      "items": { "type": "string" },
+                      "description": "List of competitors"
+                    },
+                    "income_source": { "type": "string", "description": "Sources of income for the project" }
+                  },
+                  "required": ["project_name", "description", "target_audience", "timeline"]
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Plan generated successfully",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "pdf_url": { "type": "string", "description": "URL of the generated PDF file" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
